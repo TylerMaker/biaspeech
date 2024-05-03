@@ -1,23 +1,42 @@
-## **BIA (IA)**, your **IA powered vocal assistant**. 
+# **BIA (IA)**, your **IA powered vocal assistant**. 
 
 ## Pitch:
--  **BIA** is an **IA powered vocal assistant**. BIA brings all in one ChatGPT, 
-voice command, YouTube, Netflix, TV, Radio and web navigation. 
-- **BIA** is multi language and can interact via the voice or command line. Can run 
-on any laptop, and even on a Raspberry.
-- Extra cool functionality, **BIA** also provides IA to the educational **Otto robot**. Historically, 
-**Otto** is a world-wide known open source robot used for educational and fun purpose. **BIA** 
-brings **Otto** to the next level. Yes, you can now have a conversation with the robot, 
-ie asking him to execute dynamic actions (danse, walk, make sounds, and so on). 
-- A **double layer IA mechanism** provide fast and accurate answers : one layer powered 
-by OpenAI, and a second layer processed by a native AI manages the cache and the 
-smart actions (complex requests), ensuring better and faster answers.
+- **BIA** is an AI vocal assistant.. all in one software : ChatGPT, voice command, YouTube, Netflix, TV, Radio and web navigation
+- **BIA** is multi language, ... 
+- and **BIA** also provides AI to the educational **Otto robot** :)
 
-Checkout the full tutorial on instructables : 
+Example of what you can do with it :
+- Chat with **ChatGPT**
+- Ask Bia to open a web page, YouTube, a radio, a TV channel or Netflix
+- Ask Bia to take a **picture**
+- Ask **complex instruction** with a If This Then That logic (experimental)
+- Save complex instructions as a **macro**
+- Ask **Otto the robot** to dance, sing, walk, ...
+- And some more
+- The brain of Bia is the **Python module biaspeech**
 
-	https://www.instructables.com/BIA-AI-Your-IA-Powered-Vocal-Assistant-instructabl/
+## Links:
 
-## Basic usage of BIA, **app mode** :
+Checkout the full tutorials on **instructables** : 
+- [how-to : biaspeech on laptop](https://www.instructables.com/BIA-AI-Your-IA-Powered-Vocal-Assistant-instructabl)
+- [how-to : biaspeech on Raspberry PI](https://www.instructables.com/BIA-AI-Your-AI-Vocal-Assistant-instructable-23-BIA)
+- [how-to : biaspeech and Otto the (DIY) robot](https://www.instructables.com/BIA-AI-Your-AI-Vocal-Assistant-instructable-33-BIA)
+
+Python module :
+- [biaspeech python module on PyPI](https://pypi.org/search/?q=biaspeech)
+
+Social networks :
+- [https://facebook.com/61559097455165](Facebook)
+- [https://youtube.com/@TylerMakerDDDD](YouTube)
+- Mail to Tyler Maker (makertylerdddd@gmail.com) 
+
+The **new team members** are welcome :)
+
+[You can also buy me a coffee ... :)](buymeacoffee.com/makertyler)
+
+## How-to use biaspeech ?
+
+### Basic usage of BIA, **app mode** :
 - First, install the prerequesite, as per described in the installation section below
 - Open a terminal, then type : 
 
@@ -25,7 +44,7 @@ Checkout the full tutorial on instructables :
 
 - The Bia app will open, just push the button and ask a question. Bia will answer ... Enjoy :)
 
-## Lazy usage of BIA, **voice mode** :
+### Lazy usage of BIA, **voice mode** :
 - Open a terminal, then type : 
 
 	python3 run.py
@@ -33,9 +52,11 @@ Checkout the full tutorial on instructables :
 - The app will not open but the service is listening.. Ask a question. Bia will answer ... Enjoy :)
 
 Note : the **UI** parameter under the **[main]** section must be set to "voice". 
-The config file can be found under <<python package>>/utils/config.cfg
+The config file can be found under 
 
-## Advanced usage of BIA, **command line mode** :
+	<<python package>>/utils/config.cfg
+
+### Advanced usage of BIA, **command line mode** :
 - Open a terminal, then type : 
 
 	python3 run.py "what can I do a friday afternoon in Paris?"
@@ -44,7 +65,7 @@ The config file can be found under <<python package>>/utils/config.cfg
 
 - Bia will answer ... Enjoy :)
 
-## Voice usage of BIA, **keyboard mode** :
+### Voice usage of BIA, **keyboard mode** :
 - Open a terminal, then type : 
 	
 	python3 run.py
@@ -54,7 +75,7 @@ The config file can be found under <<python package>>/utils/config.cfg
 Note : the **UI** parameter under the **[main]** section must be set to "voice". 
 The config file can be found under <<python package>>/utils/config.cfg
 
-## Developer usage of BIA, **keyboard mode** :
+### Developer usage of BIA, **keyboard mode** :
 - Open a terminal, then type : 
 	
 	python3 run.py
@@ -63,15 +84,15 @@ The config file can be found under <<python package>>/utils/config.cfg
 
 Note : the **UI** parameter under the **[main]** section must be set to "keyboard". 
 
-## Example of some prompt :
+### Example of some prompt :
 - Quelle est la capitale de la France?
 - How are you today?
 
-## Advanced prompts :
+### Advanced prompts :
 - I do not like this answer => a negative prompt will decrease the scoring of the latest answer, it will go down in the cache
 - I like this answer very much => a positive prompt will increase the scoring of the latest answer, it will stays up in the cache
 
-## Skills. The special prompts are the following :
+### Skills. The special prompts are the following :
 - **camera** : take a picture => Example : Camera now
 - **macro** : save the last command as a keyword => Example : Macro salsa
 - **netflix** : run netflix and search for a movie => Example : Netflix breaking bad
@@ -86,10 +107,12 @@ Note : the **UI** parameter under the **[main]** section must be set to "keyboar
 	walk, back, left, right, stop, happy, sad, surprise, moonwalkerleft, moonwalkerright, sing
 	
 	A predefined keyword means that the Arduino code for the keyword/action is preloaded in Arduino. For other than those 11 predefined actions, a live request to chapGPT will dynamically build the Arduino code.
-	=> Example : robot walk
-	=> Example : robot dance the salsa
+	=> Example : "robot walk" (this is a predefined keyword, the Arduino code is preloaded)
+	=> Example : "robot dance the salsa" (the Arduino code will be generated by chatGPT and cached locally)
 
-## Required hardware:
+## Installation
+
+### Required hardware:
 - Developed under MacOS Catalina version 10.15.7 and Python version 3.8
 - Tested under Raspberry OS and Python version 3.9
 - Headphone and microphone
@@ -97,7 +120,7 @@ Note : the **UI** parameter under the **[main]** section must be set to "keyboar
 - (optional) Raspberry PI
 - (optional) Otto robot
 
-## How to install on MacOS : 
+### How to install on MacOS : 
 
  **A. Prerequesites :**
  
@@ -145,10 +168,14 @@ Download the nltk ressources :
  **C. Create a file run.py :**
  
 	import os
-	os.environ['OPENAI_API_KEY'] = "xxxx" # openAI API keyos.environ['OS'] = "macos"
-	from biaspeech import biaspeech
+	os.environ['OPENAI_API_KEY'] = "xxxx" # OpenAI API key, put your own key here ;)
+	os.environ['OS'] = "macos"
+	os.environ['ARDUINO'] = ""
 
-## How to install on Raspberry OS : 
+	from biaspeech import biaspeech
+	biaspeech()
+
+### How to install on Raspberry OS : 
 
  **A. Prerequesites :**
  
@@ -204,7 +231,7 @@ Check the microphone configuration : https://www.pofilo.fr/post/2018/12/16-mic-r
     os.environ['OS'] = "raspberry"
     from biaspeech import biaspeech
  
-## Parameters to be checked and changed in the file config.cfg : 
+### Parameters to be checked and changed in the file config.cfg : 
 - **UI** parameter under the **[main]** section, the possible values are :	
 	"keyboard" (keyboard/command line mode) 
 	"voice" (voice mode) 
@@ -213,7 +240,7 @@ Check the microphone configuration : https://www.pofilo.fr/post/2018/12/16-mic-r
 - Optional, parameters under the **[arduino]** section
 - Others parameters are self explanatory
 
-## Advanced tips : 
+### Advanced tips : 
 - Bia will **log into a file** when run with this command :
 
 	python3 -u run.py > <<python package>>/data/logs/bia_"$(date +"%Y_%m_%d_%I_%M_%p").log" 2>&1
@@ -224,11 +251,8 @@ Check the microphone configuration : https://www.pofilo.fr/post/2018/12/16-mic-r
 
 	python3 run.py -update
 
-
-## Tyler Maker (makertylerdddd@gmail.com)
-
 ## Versions:
-- v1.0 02.04.2024 Creation
+- v1.0.1 02.05.2024 Creation
 
 ## License:
 - Licensed under CC BY-NC-ND 4.0. 

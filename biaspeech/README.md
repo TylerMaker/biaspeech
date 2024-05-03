@@ -25,14 +25,11 @@ Checkout the full tutorials on **instructables** :
 Python module :
 - [biaspeech python module on PyPI](https://pypi.org/search/?q=biaspeech)
 
-Social networks :
-- [https://facebook.com/61559097455165](Facebook)
-- [https://youtube.com/@TylerMakerDDDD](YouTube)
+Contact :
 - Mail to Tyler Maker (makertylerdddd@gmail.com) 
+- [Buy me a coffee ...](https://buymeacoffee.com/makertyler)
 
 The **new team members** are welcome :)
-
-[You can also buy me a coffee ... :)](buymeacoffee.com/makertyler)
 
 ## How-to use biaspeech ?
 

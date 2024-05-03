@@ -13,6 +13,10 @@ ie asking him to execute dynamic actions (danse, walk, make sounds, and so on).
 by OpenAI, and a second layer processed by a native AI manages the cache and the 
 smart actions (complex requests), ensuring better and faster answers.
 
+Checkout the full tutorial on instructables : 
+
+	https://www.instructables.com/BIA-AI-Your-IA-Powered-Vocal-Assistant-instructabl/
+
 ## Basic usage of BIA, **app mode** :
 - First, install the prerequesite, as per described in the installation section below
 - Open a terminal, then type : 
@@ -226,3 +230,5 @@ Check the microphone configuration : https://www.pofilo.fr/post/2018/12/16-mic-r
 ## Versions:
 - v1.0 02.04.2024 Creation
 
+## License:
+- Licensed under CC BY-NC-ND 4.0. 

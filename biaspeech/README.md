@@ -27,6 +27,8 @@ Python module :
 
 Contact :
 - Mail to Tyler Maker (makertylerdddd@gmail.com) 
+- [YouTube](https://www.youtube.com/@TylerMakerDDDD)
+- [Facebook](https://www.facebook.com/profile.php?id=61559097455165)
 - [Buy me a coffee ...](https://buymeacoffee.com/makertyler)
 
 The **new team members** are welcome :)

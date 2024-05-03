@@ -214,9 +214,12 @@ Check the microphone configuration : https://www.pofilo.fr/post/2018/12/16-mic-r
  **C. Create a file run.py :**
  
 	import os
-    os.environ['OPENAI_API_KEY'] = "xxxx" # openAI API key
-    os.environ['OS'] = "raspberry"
-    from biaspeech import biaspeech
+	os.environ['OPENAI_API_KEY'] = "xxxx" # OpenAI API key, put your own key here ;)
+	os.environ['OS'] = "raspberry"
+	os.environ['ARDUINO'] = ""
+
+	from biaspeech import biaspeech
+	biaspeech()
  
 ### Parameters to be checked and changed in the file config.cfg : 
 - **UI** parameter under the **[main]** section, the possible values are :	

@@ -22,7 +22,7 @@ if [ "$yn" = "y" ] || [ "$yn" = "Y" ]; then
     echo "Deploy the Bia project files to $ip"
 
     # Make a copy of the full folder
-    scp -r /users/tylerdddd/Documents/Git/Otto/* tylerdddd@$ip:/home/tylerdddd/Bia/       
+    scp -r /Users/tylerdddd/git/repository/biaspeech/* tylerdddd@$ip:/home/tylerdddd/Bia/       
     echo "Bia python files successfully deployed"
 
     echo "Bia config file successfully deployed"

@@ -43,18 +43,6 @@ The **new team members** are welcome :)
 
 - The Bia app will open, just push the button and ask a question. Bia will answer ... Enjoy :)
 
-### Lazy usage of BIA, **voice mode** :
-- Open a terminal, then type : 
-
-	python3 run.py
-
-- The app will not open but the service is listening.. Ask a question. Bia will answer ... Enjoy :)
-
-Note : the **UI** parameter under the **[main]** section must be set to "voice". 
-The config file can be found under 
-
-	<<python package>>/utils/config.cfg
-
 ### Advanced usage of BIA, **command line mode** :
 - Open a terminal, then type : 
 
@@ -64,16 +52,6 @@ The config file can be found under
 
 - Bia will answer ... Enjoy :)
 
-### Voice usage of BIA, **keyboard mode** :
-- Open a terminal, then type : 
-	
-	python3 run.py
-
-- Ask a question. Bia will answer ... Enjoy :)
-
-Note : the **UI** parameter under the **[main]** section must be set to "voice". 
-The config file can be found under <<python package>>/utils/config.cfg
-
 ### Developer usage of BIA, **keyboard mode** :
 - Open a terminal, then type : 
 	
@@ -82,6 +60,16 @@ The config file can be found under <<python package>>/utils/config.cfg
 - Write a question. Bia will answer ... Enjoy :)
 
 Note : the **UI** parameter under the **[main]** section must be set to "keyboard". 
+
+### Voice usage of BIA, **voice mode** :
+- Open a terminal, then type : 
+	
+	python3 run.py
+
+- Ask a question. Bia will answer ... Enjoy :)
+
+Note : the **UI** parameter under the **[main]** section must be set to "voice". 
+The config file can be found under <<python package>>/utils/config.cfg
 
 ### Example of some prompt :
 - Quelle est la capitale de la France?

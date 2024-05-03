@@ -11,6 +11,7 @@
 # run
 # - ----
 
-cd /Users/tylerdddd/Documents/Git/Otto
-python3 -u ./main.py > ./data/logs/bia_"$(date +"%Y_%m_%d_%I_%M_%p").log" 2>&1
+cd /Users/tylerdddd/git/repository/biaspeech
+python3 -u ./run.py 2>&1
+
 
